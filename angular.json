@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "piservices-angular": {
+      "projectType": "library",
+      "root": "projects/piservices-angular",
+      "sourceRoot": "projects/piservices-angular/src",
+      "prefix": "pi",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/piservices-angular/tsconfig.lib.json",
+            "project": "projects/piservices-angular/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/piservices-angular/src/test.ts",
+            "tsConfig": "projects/piservices-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/piservices-angular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/piservices-angular/tsconfig.lib.json",
+              "projects/piservices-angular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "piservices-angular"
+}
