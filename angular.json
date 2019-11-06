@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "pirest-angular": {
+      "projectType": "library",
+      "root": "projects/pirest-angular",
+      "sourceRoot": "projects/pirest-angular/src",
+      "prefix": "pi",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/pirest-angular/tsconfig.lib.json",
+            "project": "projects/pirest-angular/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pirest-angular/src/test.ts",
+            "tsConfig": "projects/pirest-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/pirest-angular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/pirest-angular/tsconfig.lib.json",
+              "projects/pirest-angular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "pirest-angular"
+}
