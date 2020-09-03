@@ -1,10 +1,10 @@
 {
-  "name": "pirest-angular",
+  "name": "@pomgui/rest-angular",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11",
-    "pirest-lib": "file:/pi/pirest-lib"
+    "@pomgui/rest-lib": "git+ssh://git@github.com/pomgui/pirest-lib.git"
   },
   "devDependencies": {}
 }

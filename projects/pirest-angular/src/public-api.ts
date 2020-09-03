@@ -4,4 +4,4 @@
 
 export * from './lib/PiApiCaller';
 export * from './lib/pirest-angular.module';
-export * from 'pirest-lib';
+export * from '@pomgui/rest-lib';

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
-import { PiTypeDescriptor, PiApiParams, PiDescriptor } from 'pirest-lib';
+import { PiTypeDescriptor, PiApiParams, PiDescriptor } from '@pomgui/rest-lib';
 
 export class PiApiCaller {
     basePath: string = '';

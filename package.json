@@ -1,5 +1,5 @@
 {
-  "name": "pirest-angular",
+  "name": "@pomgui/rest-angular",
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
