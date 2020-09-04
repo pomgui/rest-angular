@@ -4,7 +4,7 @@
   "peerDependencies": {
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11",
-    "@pomgui/rest-lib": "git+ssh://git@github.com/pomgui/pirest-lib.git"
+    "@pomgui/rest-lib": "^0.1.0-beta.0"
   },
   "devDependencies": {}
 }
